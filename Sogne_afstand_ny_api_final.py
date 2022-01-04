@@ -15,7 +15,7 @@ by_k_hard='12.57, 55.68', '10.209722, 56.156389', '10.383333, 55.4', '9.919444, 
 
 
 # input 1 Sogn Gps -coordinates and number
-with open('C:\\Users\\au337954\\Documents\\python\\Geo afstand\\Sogne_data.txt', mode='r',encoding="utf-8-sig") as csv_file:
+with open('C:\\Users\\\\xxxx\\\\Sogne_data.txt', mode='r',encoding="utf-8-sig") as csv_file: # insert path
 	csv_reader = csv.DictReader(csv_file , delimiter=',')
 	line_count = 0
 
@@ -29,7 +29,7 @@ with open('C:\\Users\\au337954\\Documents\\python\\Geo afstand\\Sogne_data.txt',
 		sogn_navn.append(str(sogn_navn_temp))
 
 # input 2 - By -cordinates and name  
-with open('C:\\Users\\au337954\\Documents\\python\\Geo afstand\\GEO_byer.csv', mode='r') as csv_file:
+with open('C:\\Users\\xxxx\\GEO_byer.csv', mode='r') as csv_file: # insert path
 	csv_reader = csv.DictReader(csv_file , delimiter=',')
 	line_count = 0
 
@@ -99,7 +99,7 @@ for j in by_k_hard:
 	df=pd.DataFrame(data_tuples, columns=['afstand '+str(o),'Sogn_kordinat'])
 
 
-	df.to_excel(r'C:\Users\au337954\Documents\python\Geo afstand\outputdata\output'+ str(o) + '.xlsx', index = False)
+	df.to_excel(r'C:\Users\\\xxxx\\\output'+ str(o) + '.xlsx', index = False)
 	o=o+1
 	print("file with # "+str(o)+" created with " + str(len(output_a))+ " entries")
 
