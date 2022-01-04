@@ -1,4 +1,4 @@
-# projekter
+# Python projekter
 Disse to eksempler på python kode jeg har skrevet, er taget fra to forskellige forskningsprojekter jeg har været med i. 
 De er ikke helt finpudsede og kunne godt bruge noget mere metatekst, såfrem at andre skulle overtage koden fra mig.
 
